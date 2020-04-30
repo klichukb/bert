@@ -1,0 +1,563 @@
+Using GPU:  4
+Text Input:  torch.Size([159571, 512])
+Text Input Attention:  torch.Size([159571, 512])
+Labels:  torch.Size([159571, 6])
+Data Ready!!
+
+======== Epoch 1 / 5 ========
+Training...
+  Batch 1,000  of  15,957.    Elapsed: 0:08:32. Loss: 0.11893
+  Batch 2,000  of  15,957.    Elapsed: 0:17:10. Loss: 0.09294
+  Batch 3,000  of  15,957.    Elapsed: 0:25:48. Loss: 0.08273
+  Batch 4,000  of  15,957.    Elapsed: 0:34:28. Loss: 0.07614
+  Batch 5,000  of  15,957.    Elapsed: 0:43:08. Loss: 0.07294
+  Batch 6,000  of  15,957.    Elapsed: 0:51:47. Loss: 0.06958
+  Batch 7,000  of  15,957.    Elapsed: 1:00:26. Loss: 0.06778
+  Batch 8,000  of  15,957.    Elapsed: 1:09:04. Loss: 0.06584
+  Batch 9,000  of  15,957.    Elapsed: 1:17:44. Loss: 0.06436
+  Batch 10,000  of  15,957.    Elapsed: 1:26:22. Loss: 0.06307
+  Batch 11,000  of  15,957.    Elapsed: 1:34:59. Loss: 0.06201
+  Batch 12,000  of  15,957.    Elapsed: 1:43:37. Loss: 0.06090
+  Batch 13,000  of  15,957.    Elapsed: 1:52:16. Loss: 0.06008
+  Batch 14,000  of  15,957.    Elapsed: 2:00:56. Loss: 0.05928
+  Batch 15,000  of  15,957.    Elapsed: 2:09:35. Loss: 0.05879
+
+  Average training loss: 0.06
+  Training epcoh took: 2:17:49
+
+Running Validation...
+  Validation Loss: 0.04
+  Validation took: 0:11:12
+  Accuracy: 0.96
+  Accuracy: 0.99
+  Accuracy: 0.98
+  Accuracy: 1.00
+  Accuracy: 0.97    
+  Accuracy: 0.99
+  Macro F1-score: 0.90
+  Macro F1-score: 0.77
+  Macro F1-score: 0.90
+  Macro F1-score: 0.73
+  Macro F1-score: 0.87
+  Macro F1-score: 0.77
+  Weighted F1-score: 0.96
+  Weighted F1-score: 0.99
+  Weighted F1-score: 0.98
+  Weighted F1-score: 1.00
+  Weighted F1-score: 0.97
+  Weighted F1-score: 0.99
+Classification Report:
+              precision    recall  f1-score   support
+
+         0.0       0.98      0.98      0.98     28789
+         1.0       0.81      0.83      0.82      3126
+
+    accuracy                           0.96     31915
+   macro avg       0.90      0.91      0.90     31915
+weighted avg       0.96      0.96      0.96     31915
+
+              precision    recall  f1-score   support
+
+         0.0       1.00      0.99      0.99     31596
+         1.0       0.43      0.71      0.54       319
+
+    accuracy                           0.99     31915
+   macro avg       0.71      0.85      0.77     31915
+weighted avg       0.99      0.99      0.99     31915
+
+              precision    recall  f1-score   support
+
+         0.0       0.99      0.98      0.99     30218
+         1.0       0.74      0.89      0.81      1697
+
+    accuracy                           0.98     31915
+   macro avg       0.86      0.94      0.90     31915
+weighted avg       0.98      0.98      0.98     31915
+
+              precision    recall  f1-score   support
+
+         0.0       1.00      1.00      1.00     31827
+         1.0       0.47      0.45      0.46        88
+
+    accuracy                           1.00     31915
+   macro avg       0.73      0.73      0.73     31915
+weighted avg       1.00      1.00      1.00     31915
+
+              precision    recall  f1-score   support
+
+         0.0       0.99      0.98      0.98     30333
+         1.0       0.65      0.88      0.75      1582
+
+    accuracy                           0.97     31915
+   macro avg       0.82      0.93      0.87     31915
+weighted avg       0.98      0.97      0.97     31915
+
+              precision    recall  f1-score   support
+
+         0.0       1.00      0.99      1.00     31662
+         1.0       0.47      0.65      0.55       253
+
+    accuracy                           0.99     31915
+   macro avg       0.74      0.82      0.77     31915
+weighted avg       0.99      0.99      0.99     31915
+
+Confusion Matrix:
+[[28185   604]
+ [  528  2598]]
+[[31299   297]
+ [   93   226]]
+[[29672   546]
+ [  180  1517]]
+[[31781    46]
+ [   48    40]]
+[[29582   751]
+ [  194  1388]]
+[[31480   182]
+ [   89   164]]
+
+======== Epoch 2 / 5 ========
+Training...
+  Batch 1,000  of  15,957.    Elapsed: 0:08:41. Loss: 0.04307
+  Batch 2,000  of  15,957.    Elapsed: 0:17:21. Loss: 0.04164
+  Batch 3,000  of  15,957.    Elapsed: 0:25:59. Loss: 0.04126
+  Batch 4,000  of  15,957.    Elapsed: 0:34:40. Loss: 0.04084
+  Batch 5,000  of  15,957.    Elapsed: 0:43:19. Loss: 0.04100
+  Batch 6,000  of  15,957.    Elapsed: 0:51:56. Loss: 0.04052
+  Batch 7,000  of  15,957.    Elapsed: 1:00:33. Loss: 0.04052
+  Batch 8,000  of  15,957.    Elapsed: 1:09:11. Loss: 0.04076
+  Batch 9,000  of  15,957.    Elapsed: 1:17:49. Loss: 0.04073
+  Batch 10,000  of  15,957.    Elapsed: 1:26:28. Loss: 0.04095
+  Batch 11,000  of  15,957.    Elapsed: 1:35:07. Loss: 0.04104
+  Batch 12,000  of  15,957.    Elapsed: 1:43:45. Loss: 0.04080
+  Batch 13,000  of  15,957.    Elapsed: 1:52:22. Loss: 0.04082
+  Batch 14,000  of  15,957.    Elapsed: 2:01:01. Loss: 0.04075
+  Batch 15,000  of  15,957.    Elapsed: 2:09:40. Loss: 0.04061
+
+  Average training loss: 0.04
+  Training epcoh took: 2:17:56
+
+Running Validation...
+  Validation Loss: 0.04
+  Validation took: 0:11:13
+  Accuracy: 0.96
+  Accuracy: 0.99
+  Accuracy: 0.98
+  Accuracy: 1.00
+  Accuracy: 0.97
+  Accuracy: 0.99
+  Macro F1-score: 0.90
+  Macro F1-score: 0.76
+  Macro F1-score: 0.90
+  Macro F1-score: 0.75
+  Macro F1-score: 0.87
+  Macro F1-score: 0.78
+  Weighted F1-score: 0.96
+  Weighted F1-score: 0.99
+  Weighted F1-score: 0.98
+  Weighted F1-score: 1.00
+  Weighted F1-score: 0.97
+  Weighted F1-score: 0.99
+Classification Report:
+              precision    recall  f1-score   support
+
+         0.0       0.98      0.98      0.98     28789
+         1.0       0.79      0.85      0.82      3126
+
+    accuracy                           0.96     31915
+   macro avg       0.89      0.91      0.90     31915
+weighted avg       0.96      0.96      0.96     31915
+
+              precision    recall  f1-score   support
+
+         0.0       1.00      0.99      0.99     31596
+         1.0       0.46      0.62      0.53       319
+
+    accuracy                           0.99     31915
+   macro avg       0.73      0.81      0.76     31915
+weighted avg       0.99      0.99      0.99     31915
+
+              precision    recall  f1-score   support
+
+         0.0       0.99      0.98      0.99     30218
+         1.0       0.76      0.89      0.82      1697
+
+    accuracy                           0.98     31915
+   macro avg       0.88      0.94      0.90     31915
+weighted avg       0.98      0.98      0.98     31915
+
+              precision    recall  f1-score   support
+
+         0.0       1.00      1.00      1.00     31827
+         1.0       0.55      0.47      0.50        88
+
+    accuracy                           1.00     31915
+   macro avg       0.77      0.73      0.75     31915
+weighted avg       1.00      1.00      1.00     31915
+
+              precision    recall  f1-score   support
+
+         0.0       0.99      0.98      0.99     30333
+         1.0       0.67      0.87      0.76      1582
+
+    accuracy                           0.97     31915
+   macro avg       0.83      0.92      0.87     31915
+weighted avg       0.98      0.97      0.97     31915
+
+              precision    recall  f1-score   support
+
+         0.0       1.00      1.00      1.00     31662
+         1.0       0.51      0.62      0.56       253
+
+    accuracy                           0.99     31915
+   macro avg       0.75      0.81      0.78     31915
+weighted avg       0.99      0.99      0.99     31915
+
+Confusion Matrix:
+[[28072   717]
+ [  456  2670]]
+[[31360   236]
+ [  121   198]]
+[[29734   484]
+ [  182  1515]]
+[[31793    34]
+ [   47    41]]
+[[29666   667]
+ [  206  1376]]
+[[31510   152]
+ [   95   158]]
+
+======== Epoch 3 / 5 ========
+Training...
+  Batch 1,000  of  15,957.    Elapsed: 0:08:35. Loss: 0.03219
+  Batch 2,000  of  15,957.    Elapsed: 0:17:11. Loss: 0.03042
+  Batch 3,000  of  15,957.    Elapsed: 0:25:46. Loss: 0.03105
+  Batch 4,000  of  15,957.    Elapsed: 0:34:20. Loss: 0.03104
+  Batch 5,000  of  15,957.    Elapsed: 0:42:58. Loss: 0.03095
+  Batch 6,000  of  15,957.    Elapsed: 0:51:34. Loss: 0.03107
+  Batch 7,000  of  15,957.    Elapsed: 1:00:10. Loss: 0.03103
+  Batch 8,000  of  15,957.    Elapsed: 1:08:52. Loss: 0.03116
+  Batch 9,000  of  15,957.    Elapsed: 1:17:30. Loss: 0.03088
+  Batch 10,000  of  15,957.    Elapsed: 1:26:05. Loss: 0.03082
+  Batch 11,000  of  15,957.    Elapsed: 1:34:43. Loss: 0.03074
+  Batch 12,000  of  15,957.    Elapsed: 1:43:22. Loss: 0.03070
+  Batch 13,000  of  15,957.    Elapsed: 1:52:01. Loss: 0.03076
+  Batch 14,000  of  15,957.    Elapsed: 2:00:39. Loss: 0.03072
+  Batch 15,000  of  15,957.    Elapsed: 2:09:18. Loss: 0.03072
+
+  Average training loss: 0.03
+  Training epcoh took: 2:17:34
+
+Running Validation...
+  Validation Loss: 0.05
+  Validation took: 0:11:12
+  Accuracy: 0.97
+  Accuracy: 0.99
+  Accuracy: 0.98
+  Accuracy: 1.00
+  Accuracy: 0.98
+  Accuracy: 0.99
+  Macro F1-score: 0.91
+  Macro F1-score: 0.76
+  Macro F1-score: 0.92
+  Macro F1-score: 0.76
+  Macro F1-score: 0.88
+  Macro F1-score: 0.78
+  Weighted F1-score: 0.97
+  Weighted F1-score: 0.99
+  Weighted F1-score: 0.98
+  Weighted F1-score: 1.00
+  Weighted F1-score: 0.98
+  Weighted F1-score: 0.99
+Classification Report:
+              precision    recall  f1-score   support
+
+         0.0       0.98      0.98      0.98     28789
+         1.0       0.85      0.82      0.83      3126
+
+    accuracy                           0.97     31915
+   macro avg       0.91      0.90      0.91     31915
+weighted avg       0.97      0.97      0.97     31915
+
+              precision    recall  f1-score   support
+
+         0.0       1.00      0.99      0.99     31596
+         1.0       0.46      0.60      0.52       319
+
+    accuracy                           0.99     31915
+   macro avg       0.73      0.79      0.76     31915
+weighted avg       0.99      0.99      0.99     31915
+
+              precision    recall  f1-score   support
+
+         0.0       0.99      0.99      0.99     30218
+         1.0       0.82      0.86      0.84      1697
+
+    accuracy                           0.98     31915
+   macro avg       0.91      0.93      0.92     31915
+weighted avg       0.98      0.98      0.98     31915
+
+              precision    recall  f1-score   support
+
+         0.0       1.00      1.00      1.00     31827
+         1.0       0.54      0.50      0.52        88
+
+    accuracy                           1.00     31915
+   macro avg       0.77      0.75      0.76     31915
+weighted avg       1.00      1.00      1.00     31915
+
+              precision    recall  f1-score   support
+
+         0.0       0.99      0.98      0.99     30333
+         1.0       0.73      0.82      0.77      1582
+
+    accuracy                           0.98     31915
+   macro avg       0.86      0.90      0.88     31915
+weighted avg       0.98      0.98      0.98     31915
+
+              precision    recall  f1-score   support
+
+         0.0       1.00      1.00      1.00     31662
+         1.0       0.51      0.63      0.57       253
+
+    accuracy                           0.99     31915
+   macro avg       0.75      0.81      0.78     31915
+weighted avg       0.99      0.99      0.99     31915
+
+Confusion Matrix:
+[[28322   467]
+ [  577  2549]]
+[[31374   222]
+ [  129   190]]
+[[29898   320]
+ [  236  1461]]
+[[31789    38]
+ [   44    44]]
+[[29857   476]
+ [  288  1294]]
+[[31509   153]
+ [   93   160]]
+
+======== Epoch 4 / 5 ========
+Training...
+  Batch 1,000  of  15,957.    Elapsed: 0:08:39. Loss: 0.02126
+  Batch 2,000  of  15,957.    Elapsed: 0:17:16. Loss: 0.02206
+  Batch 3,000  of  15,957.    Elapsed: 0:25:52. Loss: 0.02245
+  Batch 4,000  of  15,957.    Elapsed: 0:34:30. Loss: 0.02249
+  Batch 5,000  of  15,957.    Elapsed: 0:43:07. Loss: 0.02256
+  Batch 6,000  of  15,957.    Elapsed: 0:51:46. Loss: 0.02265
+  Batch 7,000  of  15,957.    Elapsed: 1:00:23. Loss: 0.02248
+  Batch 8,000  of  15,957.    Elapsed: 1:09:02. Loss: 0.02237
+  Batch 9,000  of  15,957.    Elapsed: 1:17:40. Loss: 0.02238
+  Batch 10,000  of  15,957.    Elapsed: 1:26:19. Loss: 0.02255
+  Batch 11,000  of  15,957.    Elapsed: 1:34:58. Loss: 0.02244
+  Batch 12,000  of  15,957.    Elapsed: 1:43:38. Loss: 0.02245
+  Batch 13,000  of  15,957.    Elapsed: 1:52:15. Loss: 0.02260
+  Batch 14,000  of  15,957.    Elapsed: 2:00:54. Loss: 0.02247
+  Batch 15,000  of  15,957.    Elapsed: 2:09:33. Loss: 0.02248
+
+  Average training loss: 0.02
+  Training epcoh took: 2:17:50
+
+Running Validation...
+  Validation Loss: 0.06
+  Validation took: 0:11:12
+  Accuracy: 0.96
+  Accuracy: 0.99
+  Accuracy: 0.98
+  Accuracy: 1.00
+  Accuracy: 0.98
+  Accuracy: 0.99
+  Macro F1-score: 0.90
+  Macro F1-score: 0.74
+  Macro F1-score: 0.91
+  Macro F1-score: 0.78
+  Macro F1-score: 0.88
+  Macro F1-score: 0.78
+  Weighted F1-score: 0.96
+  Weighted F1-score: 0.99
+  Weighted F1-score: 0.98
+  Weighted F1-score: 1.00
+  Weighted F1-score: 0.98
+  Weighted F1-score: 0.99
+Classification Report:
+              precision    recall  f1-score   support
+
+         0.0       0.98      0.98      0.98     28789
+         1.0       0.80      0.84      0.82      3126
+
+    accuracy                           0.96     31915
+   macro avg       0.89      0.91      0.90     31915
+weighted avg       0.96      0.96      0.96     31915
+
+              precision    recall  f1-score   support
+
+         0.0       0.99      0.99      0.99     31596
+         1.0       0.48      0.50      0.49       319
+
+    accuracy                           0.99     31915
+   macro avg       0.74      0.75      0.74     31915
+weighted avg       0.99      0.99      0.99     31915
+
+              precision    recall  f1-score   support
+
+         0.0       0.99      0.99      0.99     30218
+         1.0       0.80      0.86      0.83      1697
+
+    accuracy                           0.98     31915
+   macro avg       0.89      0.93      0.91     31915
+weighted avg       0.98      0.98      0.98     31915
+
+              precision    recall  f1-score   support
+
+         0.0       1.00      1.00      1.00     31827
+         1.0       0.51      0.61      0.56        88
+
+    accuracy                           1.00     31915
+   macro avg       0.76      0.81      0.78     31915
+weighted avg       1.00      1.00      1.00     31915
+
+              precision    recall  f1-score   support
+
+         0.0       0.99      0.98      0.99     30333
+         1.0       0.73      0.81      0.77      1582
+
+    accuracy                           0.98     31915
+   macro avg       0.86      0.90      0.88     31915
+weighted avg       0.98      0.98      0.98     31915
+
+              precision    recall  f1-score   support
+
+         0.0       1.00      1.00      1.00     31662
+         1.0       0.54      0.58      0.56       253
+
+    accuracy                           0.99     31915
+   macro avg       0.77      0.79      0.78     31915
+weighted avg       0.99      0.99      0.99     31915
+
+Confusion Matrix:
+[[28155   634]
+ [  513  2613]]
+[[31424   172]
+ [  160   159]]
+[[29846   372]
+ [  232  1465]]
+[[31776    51]
+ [   34    54]]
+[[29846   487]
+ [  296  1286]]
+[[31540   122]
+ [  107   146]]
+
+======== Epoch 5 / 5 ========
+Training...
+  Batch 1,000  of  15,957.    Elapsed: 0:08:37. Loss: 0.01616
+  Batch 2,000  of  15,957.    Elapsed: 0:17:14. Loss: 0.01613
+  Batch 3,000  of  15,957.    Elapsed: 0:25:50. Loss: 0.01578
+  Batch 4,000  of  15,957.    Elapsed: 0:34:29. Loss: 0.01614
+  Batch 5,000  of  15,957.    Elapsed: 0:43:09. Loss: 0.01642
+  Batch 6,000  of  15,957.    Elapsed: 0:51:46. Loss: 0.01605
+  Batch 7,000  of  15,957.    Elapsed: 1:00:22. Loss: 0.01612
+  Batch 8,000  of  15,957.    Elapsed: 1:09:00. Loss: 0.01607
+  Batch 9,000  of  15,957.    Elapsed: 1:17:39. Loss: 0.01624
+  Batch 10,000  of  15,957.    Elapsed: 1:26:17. Loss: 0.01618
+  Batch 11,000  of  15,957.    Elapsed: 1:34:57. Loss: 0.01601
+  Batch 12,000  of  15,957.    Elapsed: 1:43:35. Loss: 0.01598
+  Batch 13,000  of  15,957.    Elapsed: 1:52:11. Loss: 0.01596
+  Batch 14,000  of  15,957.    Elapsed: 2:00:48. Loss: 0.01597
+  Batch 15,000  of  15,957.    Elapsed: 2:09:25. Loss: 0.01576
+
+  Average training loss: 0.02
+  Training epcoh took: 2:17:40
+
+Running Validation...
+  Validation Loss: 0.07
+  Validation took: 0:11:08
+  Accuracy: 0.97
+  Accuracy: 0.99
+  Accuracy: 0.98
+  Accuracy: 1.00
+  Accuracy: 0.98
+  Accuracy: 0.99
+  Macro F1-score: 0.90
+  Macro F1-score: 0.75
+  Macro F1-score: 0.91
+  Macro F1-score: 0.78
+  Macro F1-score: 0.87
+  Macro F1-score: 0.77
+  Weighted F1-score: 0.97
+  Weighted F1-score: 0.99
+  Weighted F1-score: 0.98
+  Weighted F1-score: 1.00
+  Weighted F1-score: 0.98
+  Weighted F1-score: 0.99
+Classification Report:
+              precision    recall  f1-score   support
+
+         0.0       0.98      0.98      0.98     28789
+         1.0       0.82      0.83      0.82      3126
+
+    accuracy                           0.97     31915
+   macro avg       0.90      0.90      0.90     31915
+weighted avg       0.97      0.97      0.97     31915
+
+              precision    recall  f1-score   support
+
+         0.0       1.00      0.99      0.99     31596
+         1.0       0.47      0.55      0.50       319
+
+    accuracy                           0.99     31915
+   macro avg       0.73      0.77      0.75     31915
+weighted avg       0.99      0.99      0.99     31915
+
+              precision    recall  f1-score   support
+
+         0.0       0.99      0.99      0.99     30218
+         1.0       0.82      0.85      0.83      1697
+
+    accuracy                           0.98     31915
+   macro avg       0.90      0.92      0.91     31915
+weighted avg       0.98      0.98      0.98     31915
+
+              precision    recall  f1-score   support
+
+         0.0       1.00      1.00      1.00     31827
+         1.0       0.51      0.65      0.57        88
+
+    accuracy                           1.00     31915
+   macro avg       0.75      0.82      0.78     31915
+weighted avg       1.00      1.00      1.00     31915
+
+              precision    recall  f1-score   support
+
+         0.0       0.99      0.99      0.99     30333
+         1.0       0.74      0.78      0.76      1582
+
+    accuracy                           0.98     31915
+   macro avg       0.87      0.88      0.87     31915
+weighted avg       0.98      0.98      0.98     31915
+
+              precision    recall  f1-score   support
+
+         0.0       1.00      1.00      1.00     31662
+         1.0       0.51      0.57      0.54       253
+
+    accuracy                           0.99     31915
+   macro avg       0.75      0.78      0.77     31915
+weighted avg       0.99      0.99      0.99     31915
+
+Confusion Matrix:
+[[28212   577]
+ [  535  2591]]
+[[31396   200]
+ [  144   175]]
+[[29894   324]
+ [  255  1442]]
+[[31772    55]
+ [   31    57]]
+[[29909   424]
+ [  346  1236]]
+[[31526   136]
+ [  110   143]]
+
+Training complete!
+Total training took 12:24:55 (h:mm:ss)
