@@ -16,15 +16,15 @@ python main.py
 
 ### Project Directory
  
-`data/dataset.csv` - Dataset used to train the model.  
-`dataloader.py` - Contains the function used to load the dataset into the model.    
-`main.py` - Main python file used to run the model.  
-`model.py` - Contains the proposed model definition.
-`model_state_dict.pt` - This is not included in git. This is the weights of the trained model. This can be downloaded [here](https://drive.google.com/open?id=1nftoJ6zOPt3OcfGU3fHtfl5WQXKbhT4t).  
-`toxic_comment_classifier_result.txt` - Output of the instance run of the model.  
-`training_stats.csv` - Training Stats of the run of the model.  
-`training_stats_pickle` - Training Stats of the run of the model.
-`utils.py` - Contains the utility functions used in main.py.
+* `data/dataset.csv` - Dataset used to train the model.  
+* `dataloader.py` - Contains the function used to load the dataset into the model.    
+* `main.py` - Main python file used to run the model.  
+* `model.py` - Contains the proposed model definition.
+* `model_state_dict.pt` - Weights of the trained model (Download from [here](https://drive.google.com/open?id=1nftoJ6zOPt3OcfGU3fHtfl5WQXKbhT4t)).  
+* `toxic_comment_classifier_result.txt` - Output of the instance run of the model.  
+* `training_stats.csv` - Training Stats of the run of the model.  
+* `training_stats_pickle` - Training Stats of the run of the model.  
+* `utils.py` - Contains the utility functions used in main.py.
 
 ## Dataset Used:
 
