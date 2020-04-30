@@ -31,7 +31,7 @@ from model import MultiTaskClassifier
 #-------------------------------------------------------------------------------
 
 if torch.cuda.is_available():
-    # torch.cuda.set_device(4)
+    # torch.cuda.set_device(0)
     device = torch.device('cuda')
     print('Using GPU: ', torch.cuda.current_device())
 else:
@@ -50,7 +50,7 @@ torch.cuda.manual_seed(seed)
 
 tokenizer = BertTokenizer.from_pretrained('bert-base-uncased', do_lower_case=True)
 train_dataset, val_dataset = get_dataset(
-    pd.read_csv('./data/dataset.csv'),
+        pd.read_csv('./data/dataset.csv'),
     tokenizer = tokenizer,
     mode = 'train'
 )
@@ -215,9 +215,9 @@ for epoch_i in range(0, epochs):
             'epoch': epoch_i + 1,
             'training_loss': avg_train_loss,
             'val_loss': avg_val_loss,
-            'val_accuracy': np.mean([accuracy_score(true_labels[:,i], pred_labels[:,i]) for i in range(6)], axis = 1),
-            'val_macro_f1': np.mean([f1_score(true_labels[:,i], pred_labels[:,i], average='macro') for i in range(6)], axis=1),
-            'val_weighted_f1': np.mean([f1_score(true_labels[:,i], pred_labels[:,i], average='weighted') for i in range(6)], axis=1),
+            'val_accuracy': np.mean([accuracy_score(true_labels[:,i], pred_labels[:,i]) for i in range(6)]),
+            'val_macro_f1': np.mean([f1_score(true_labels[:,i], pred_labels[:,i], average='macro') for i in range(6)]),
+            'val_weighted_f1': np.mean([f1_score(true_labels[:,i], pred_labels[:,i], average='weighted') for i in range(6)]),
             'training_time': training_time,
             'val_tim': validation_time
         }

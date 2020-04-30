@@ -1,3 +1,8 @@
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+from transformers import BertModel
+
 class MultiTaskClassifier(nn.Module):
     def __init__(self, hidden_dim, num_labels):
         super(MultiTaskClassifier, self).__init__()
