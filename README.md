@@ -3,10 +3,10 @@ BERT Model for Toxic Comment Classification Dataset from Kaggle.
 
 Toxic Comments are huge headache on the social platforms. Hence automatic detection and filtering of such content is a necessary task.
 
-In this project I define a toxic comment classifier incorporating the state-of-the-art BERT model for classification using Pytorch library.
+In this project I define a toxic comment classifier incorporating the state-of-the-art BERT model for classification using [Pytorch](https://pytorch.org/) library.
 
 ## Steps to run the model
-
+First install [Pytorch](https://pytorch.org/get-started/locally/) according to your CPU/ GPU specifications.
 ```
 git clone https://github.com/dhanushsr/Toxic-Comment-Classifier-BERT.git
 cd Toxic-Comment-Classifier-BERT
