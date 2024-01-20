@@ -30,10 +30,10 @@ from model import MultiTaskClassifier
 #----------------------- Preparing Environment ---------------------------------
 #-------------------------------------------------------------------------------
 
-if torch.cuda.is_available():
+if False and torch.backends.mps.is_available():
     # torch.cuda.set_device(0)
-    device = torch.device('cuda')
-    print('Using GPU: ', torch.cuda.current_device())
+    device = torch.device('mps')
+    print('Using GPU: ', device)
 else:
     device = torch.device('cpu')
 
@@ -52,7 +52,6 @@ tokenizer = BertTokenizer.from_pretrained('bert-base-uncased', do_lower_case=Tru
 train_dataset, val_dataset = get_dataset(
         pd.read_csv('./data/dataset.csv'),
     tokenizer = tokenizer,
-    mode = 'train'
 )
 
 batch_size = 8

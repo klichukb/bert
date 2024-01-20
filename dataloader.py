@@ -1,17 +1,18 @@
 import torch
 from torch.utils.data import TensorDataset, random_split
 
-def get_dataset(df, tokenizer, mode='train'):
+def get_dataset(df, tokenizer):
+    df = df[:200]
     sentences, labels = df['comment_text'], df.iloc[:,2:].to_numpy()
     max_length = 300
     in_T = []
     in_T_attn_masks = []
     for sentence in sentences:
-        enc_sent_dict = tokenizer.encode_plus(
-            sentence[:300],
-            max_lenght = max_length,
+        enc_sent_dict = tokenizer(
+            sentence[:max_length],
+            max_length = max_length,
             add_special_tokens = True,
-            pad_to_max_length = True,
+            padding='max_length',
             return_attention_mask = True,
             return_tensors = 'pt'
         )
