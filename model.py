@@ -13,10 +13,11 @@ class MultiTaskClassifier(nn.Module):
         self.ffn1 = nn.Linear(768, hidden_dim)
         self.dp1 = nn.Dropout()
         self.ffn2 = nn.Linear(hidden_dim, num_labels)
+        self.res = None
         
     def forward(self, in_T, in_T_attn_masks):
-        res = self.bertmodel(in_T, in_T_attn_masks)
-        x = torch.mean(res.last_hidden_state, dim=1)
+        self.res = self.bertmodel(in_T, in_T_attn_masks)
+        x = torch.mean(self.res.last_hidden_state, dim=1)
         x = F.relu(self.ffn1(x))
         x = self.dp1(x)
         x = torch.sigmoid(self.ffn2(x))
